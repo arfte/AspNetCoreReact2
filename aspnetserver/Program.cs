@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
             builder
             .AllowAnyMethod()
             .AllowAnyHeader()
-            .WithOrigins("http://localhost:3000", "https://yellow-cliff-0f1994b0f.6.azurestaticapps.net");
+            .WithOrigins("http://localhost:3000", "https://yellow-rock-04800650f.2.azurestaticapps.net");
         });
 });
 
