@@ -119,9 +119,7 @@ export default function App() {
 
     let postsCopy = [...posts];
     const index = postsCopy.findIndex((postsCopyPost, currentIndex) => {
-      if (postsCopyPost.postId === updatedPost.postId) {
-        return true;
-      }
+      return postsCopyPost.postId === updatedPost.postId;
     });
 
     if (index !== -1) {
@@ -137,9 +135,7 @@ export default function App() {
 
     let postsCopy = [...posts];
     const index = postsCopy.findIndex((postsCopyPost, currentIndex) => {
-      if (postsCopyPost.postId === deletedPostId) {
-        return true;
-      }
+      return postsCopyPost.postId === deletedPostId;
     });
 
     if (index !== -1) {
